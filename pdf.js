@@ -12,9 +12,10 @@ const novels = [
         title: "Na-gufta",
         author: "Aiman Khan",
         genre: "Social & Psychological Fiction",
-        description: "She wanted to speak, but words had abandoned her. And by the time someone finally understood her silence, it was already too late.",
+        description:
+            "She wanted to speak, but words had abandoned her. And by the time someone finally understood her silence, it was already too late.",
         cover: "IMG_20261016_184153_970.jpg",
-        pdf: "https://drive.google.com/file/d/1iZVXprEMtmbSSuFsoJMRlD_z9Os3EQr7/view?usp=drivesdk"
+        pdf: "https://drive.google.com/file/d/1iiXsesZa1pHnMnvCBJRLf7bzrOmq2CkO/view?usp=drivesdk"
     },
     {
         title: "Mazi, Haal Aur Mustaqbil",
@@ -22,7 +23,16 @@ const novels = [
         genre: "Article",
         description: "Teen pahelo, ek zindagi",
         cover: "Mazi, haal aur mustqbil.jpg",
-        pdf: "https://drive.google.com/file/d/1m1pAULaT9IXMNWUA0yvGdv6NEKIFvJRF/view?usp=drivesdk"
+        pdf: "https://drive.google.com/file/d/1d4wIOUUqquHY98ehgJjqtIzHfogZphN7/view?usp=drivesdk"
+    },
+    {
+        title: "Islaah",
+        author: "Aiman Khan",
+        genre: "Article",
+        description:
+            "Zindagi ka woh pehlu jo humein bachpan mein aage nahi badhne deta, baron ke saamne haq par bolna badtameezi nahi.",
+        cover: "Islaah.jpg",
+        pdf: "https://drive.google.com/file/d/1HtwdExZ5Ceyq9_fb7Vfk4o2ESCWon86m/view?usp=drivesdk"
     }
 ];
 

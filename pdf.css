@@ -482,3 +482,100 @@ input:focus-visible {
     background: var(--accent);
     color: var(--white);
 }
+/* MOBILE — BIGGER, BALANCED NOVEL CARDS */
+@media screen and (max-width: 600px) {
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    .book-card {
+        padding: 10px !important;
+        min-width: 0;
+        border-radius: 3px;
+    }
+
+    .book-cover,
+    .cover-placeholder {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+
+    .book-info {
+        padding: 12px 2px 3px !important;
+    }
+
+    .genre {
+        font-size: 8px;
+        letter-spacing: 0.6px;
+        min-height: auto;
+        line-height: 1.5;
+    }
+
+    .book-info h3 {
+        font-size: 21px !important;
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+    }
+
+    .author {
+        font-size: 10px;
+        min-height: auto;
+    }
+
+    .instagram-link {
+        padding: 7px 6px;
+        font-size: 9px !important;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .description {
+        font-size: 10px !important;
+        line-height: 1.65;
+        margin-top: 8px;
+        margin-bottom: 14px;
+    }
+
+    .download-btn {
+        padding: 12px 4px !important;
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+} 
+/* FIX DOWNLOAD BUTTON ALIGNMENT */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.download-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+/* MOBILE FIX */
+@media screen and (max-width: 600px) {
+    .download-btn {
+        width: 100% !important;
+        padding: 12px 2px !important;
+        font-size: 8px !important;
+        letter-spacing: 0.3px !important;
+        white-space: normal;
+    }
+}

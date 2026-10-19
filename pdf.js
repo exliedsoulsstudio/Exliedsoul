@@ -54,7 +54,7 @@ const novels = [
     author: "Abeera Kanwal",
     genre: "Family Based · Azadi Special · Past & Present · Sacrifice",
     description: "یہ افسانہ قیامِ پاکستان کے وقت ہجرت کرنے والی خاتون کی کہانی ہے۔ اس افسانے میں محبت اور قربانی کے رنگوں کو ماضی اور حال میں دکھایا گیا ہے۔",
-    cover: "Lahuzda yaadain.jpg",
+    cover: "Lahuzda Yaadain.jpg",
     instagram: "https://www.instagram.com/abeera_abduljabbar/",
     pdf: "https://drive.google.com/file/d/1TTv63FZtIP0ITlbFRVZYaHPtDhtQgf2w/view?usp=drivesdk"
 },

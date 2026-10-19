@@ -49,6 +49,25 @@ const novels = [
     cover: "Mehandi ka rang pheeka.jpg",
     pdf: "https://drive.google.com/file/d/1FdMBYBz1me3S2BU7R54qwwcdC-BX8Tog/view?usp=drivesdk"
 },
+    {
+    title: "Lahuzda Yaadain",
+    author: "Abeera Kanwal",
+    genre: "Family Based · Azadi Special · Past & Present · Sacrifice",
+    description: "یہ افسانہ قیامِ پاکستان کے وقت ہجرت کرنے والی خاتون کی کہانی ہے۔ اس افسانے میں محبت اور قربانی کے رنگوں کو ماضی اور حال میں دکھایا گیا ہے۔",
+    cover: "Lahuzda yaadain.jpg",
+    instagram: "https://www.instagram.com/abeera_abduljabbar/",
+    pdf: "https://drive.google.com/file/d/1TTv63FZtIP0ITlbFRVZYaHPtDhtQgf2w/view?usp=drivesdk"
+},
+
+{
+    title: "Sathi",
+    author: "Abeera Kanwal",
+    genre: "Family Based · Friendship · Loyalty",
+    description: "یہ کہانی ہے ساتھ نبھانے والوں کی۔ جنید انصاری اور اس کی مخلص ساتھی عفراء انصاری کی۔ ایک محبت بھرے خاندان میں چھپے حاسدین کی۔ والدین اور اولاد کے تعلق کی۔ کہانی ہے اللہ پر توکل کی اور گر کر دوبارہ اٹھنے کی۔ ایک دوسرے کا مان برقرار رکھنے کی۔",
+    cover: "Sathi.jpg",
+    instagram: "https://www.instagram.com/abeera_abduljabbar/",
+    pdf: "https://drive.google.com/file/d/1JmFMKB4YZjaN0Bg50nE5ELV440RX7O64/view?usp=drivesdk"
+},
 ];
 
 

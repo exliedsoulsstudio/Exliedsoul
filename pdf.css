@@ -453,3 +453,16 @@ input:focus-visible {
     background: var(--accent);
     color: var(--white);
 }
+.instagram-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}

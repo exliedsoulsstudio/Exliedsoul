@@ -453,16 +453,57 @@ input:focus-visible {
     background: var(--accent);
     color: var(--white);
 }
+
+/* INSTAGRAM LINK */
 .instagram-link {
-    display: inline-block;
-    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 12px;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: transparent;
     color: var(--accent);
-    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.instagram-link::before {
+    content: "@";
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .instagram-link:hover {
-    color: var(--accent-hover);
-    text-decoration: underline;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px #40352F15;
+}
+
+/* Make all novel cards equal height */
+.book-grid {
+    align-items: stretch;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.download-btn {
+    margin-top: auto;
 }

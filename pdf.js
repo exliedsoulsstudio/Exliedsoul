@@ -39,7 +39,16 @@ const novels = [
             "Zindagi ka woh pehlu jo humein bachpan mein aage nahi badhne deta, baron ke saamne haq par bolna badtameezi nahi.",
         cover: "Islaah.jpg",
         pdf: "https://drive.google.com/file/d/1HtwdExZ5Ceyq9_fb7Vfk4o2ESCWon86m/view?usp=drivesdk"
-    }
+    },
+    {
+    title: "Mehandi ka rang pheeka",
+    author: "Abeera Kanwal",
+    instagram: "@abeera_abduljabbar",
+    genre: "Soft Romance · After Marriage · Age Difference · Light Hearted",
+    description: "کوئی بھی چیز محبت کے رنگوں کو ماند نہیں کر سکتی کیونکہ محبت کے رنگ کائنات کے سب سے گہرے رنگ ہوتے ہیں جن میں اضافہ مان اور احترام سے ہوتا ہے۔",
+    cover: "Mehandi ka rang pheeka.jpg",
+    pdf: "https://drive.google.com/file/d/1FdMBYBz1me3S2BU7R54qwwcdC-BX8Tog/view?usp=drivesdk"
+},
 ];
 
 

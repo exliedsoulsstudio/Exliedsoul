@@ -1,6 +1,5 @@
-
 /* ========================================
-   EXILED SOULS — LUXURY EDITORIAL REDESIGN
+   EXILED SOULS — LUXURY EDITORIAL DESIGN
 ======================================== */
 
 :root {
@@ -15,12 +14,19 @@
     --white: #ffffff;
 }
 
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
 }
 
 body {
+    margin: 0;
     background:
         radial-gradient(ellipse at top left, #fffdf8 0%, transparent 55%),
         var(--bg);
@@ -52,6 +58,8 @@ nav {
 nav a {
     font-size: 10px;
     letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text);
     transition: color 0.3s ease;
 }
 
@@ -66,8 +74,7 @@ nav a:hover {
     overflow: hidden;
     text-align: left;
     padding: 85px 8% 90px;
-    background:
-        linear-gradient(110deg, #f8f5ee 0%, #eee5d7 100%);
+    background: linear-gradient(110deg, #f8f5ee 0%, #eee5d7 100%);
     border-bottom: 1px solid var(--border);
 }
 
@@ -116,10 +123,12 @@ nav a:hover {
 .explore-btn {
     position: relative;
     z-index: 1;
+    display: inline-block;
     padding: 16px 28px;
     background: var(--accent);
     color: var(--white);
     border: 1px solid var(--accent);
+    text-decoration: none;
     font-size: 10px;
     letter-spacing: 2px;
     transition: all 0.3s ease;
@@ -154,11 +163,15 @@ nav a:hover {
 /* SEARCH */
 
 .search-box {
+    width: 100%;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 0;
     padding: 17px 20px;
+    font-family: inherit;
     font-size: 12px;
+    color: var(--text);
+    outline: none;
 }
 
 .search-box:focus {
@@ -166,31 +179,33 @@ nav a:hover {
     box-shadow: 0 0 0 3px #17191a0a;
 }
 
-/* NOVEL GRID */
+/* NOVEL GRID — DESKTOP */
 
 .book-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+    gap: 28px;
     align-items: stretch;
 }
 
 .book-card {
     display: flex;
     flex-direction: column;
+    min-width: 0;
     height: 100%;
-    padding: 14px;
+    padding: 16px;
     background: var(--card);
     border: 1px solid var(--border);
     box-shadow: 0 5px 18px rgba(40, 32, 20, 0.035);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .book-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(40, 32, 20, 0.09);
 }
+
+/* BOOK COVERS */
 
 .book-cover,
 .cover-placeholder {
@@ -223,8 +238,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 20px 3px 4px;
     min-width: 0;
+    width: 100%;
+    padding: 20px 3px 4px;
 }
 
 .genre {
@@ -242,6 +258,7 @@ nav a:hover {
     line-height: 1.15;
     font-weight: 600;
     margin-top: 8px;
+    overflow-wrap: anywhere;
 }
 
 .author {
@@ -295,18 +312,23 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* DOWNLOAD */
+/* DOWNLOAD BUTTON */
 
 .download-btn {
     display: block;
     width: 100%;
+    box-sizing: border-box;
     margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding: 15px 8px;
     background: var(--accent);
     border: 1px solid var(--accent);
+    border-radius: 0;
     color: var(--white);
     text-align: center;
     text-decoration: none;
+    font-family: inherit;
     font-size: 10px;
     letter-spacing: 2px;
     transition: all 0.3s ease;
@@ -354,20 +376,20 @@ footer {
 
 /* TABLET */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .library {
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .book-grid {
-        gap: 18px;
+        gap: 20px;
     }
 }
 
 /* MOBILE */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header {
         padding: 20px 5%;
         gap: 12px;
@@ -387,6 +409,8 @@ footer {
         letter-spacing: 0.8px;
     }
 
+    /* HERO */
+
     .hero {
         padding: 65px 7% 70px;
     }
@@ -404,6 +428,8 @@ footer {
         font-size: 12px;
     }
 
+    /* LIBRARY */
+
     .library {
         padding: 45px 5% 65px;
     }
@@ -412,54 +438,90 @@ footer {
         font-size: 36px;
     }
 
+    /* ONE LARGE CARD PER ROW */
+
     .book-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
     }
 
     .book-card {
-        padding: 9px;
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+        border-radius: 3px;
     }
 
+    .book-cover,
+    .cover-placeholder {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
+
+    /* CARD DETAILS */
+
     .book-info {
-        padding-top: 14px;
+        width: 100%;
+        padding: 16px 4px 4px;
     }
 
     .genre {
-        min-height: 3.2em;
-        font-size: 8px;
+        min-height: auto;
+        font-size: 10px;
         letter-spacing: 1px;
+        line-height: 1.7;
     }
 
     .book-info h3 {
-        font-size: 23px;
+        font-size: 30px;
+        line-height: 1.2;
         overflow-wrap: anywhere;
     }
 
     .author {
-        font-size: 10px;
+        min-height: auto;
+        font-size: 11px;
     }
+
+    /* INSTAGRAM */
 
     .instagram-link {
-        padding: 7px;
-        font-size: 9px;
+        padding: 8px 10px;
+        font-size: 10px;
         letter-spacing: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+
+    /* DESCRIPTION */
 
     .description {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.8;
+        margin-top: 10px;
+        margin-bottom: 18px;
     }
 
+    /* DOWNLOAD BUTTON */
+
     .download-btn {
-        padding: 13px 5px;
-        font-size: 9px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto 0 0;
+        padding: 15px 10px;
+        font-size: 10px;
         letter-spacing: 1px;
+        text-align: center;
+        white-space: normal;
     }
 
     .cover-placeholder .cover-title {
-        font-size: 21px;
+        font-size: 25px;
     }
+
+    /* ABOUT */
 
     .about {
         padding: 55px 7%;
@@ -467,6 +529,45 @@ footer {
 
     .about h2 {
         font-size: 36px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 8px;
+        letter-spacing: 2px;
+        line-height: 2;
+    }
+}
+
+/* SMALL PHONES */
+
+@media screen and (max-width: 360px) {
+    .brand {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        gap: 9px;
+    }
+
+    nav a {
+        font-size: 8px;
+        letter-spacing: 0.4px;
+    }
+
+    .book-info h3 {
+        font-size: 26px;
+    }
+
+    .download-btn {
+        font-size: 9px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -481,101 +582,4 @@ input:focus-visible {
 ::selection {
     background: var(--accent);
     color: var(--white);
-}
-/* MOBILE — BIGGER, BALANCED NOVEL CARDS */
-@media screen and (max-width: 600px) {
-    .book-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 16px !important;
-    }
-
-    .book-card {
-        padding: 10px !important;
-        min-width: 0;
-        border-radius: 3px;
-    }
-
-    .book-cover,
-    .cover-placeholder {
-        width: 100%;
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-    }
-
-    .book-info {
-        padding: 12px 2px 3px !important;
-    }
-
-    .genre {
-        font-size: 8px;
-        letter-spacing: 0.6px;
-        min-height: auto;
-        line-height: 1.5;
-    }
-
-    .book-info h3 {
-        font-size: 21px !important;
-        line-height: 1.15;
-        overflow-wrap: anywhere;
-    }
-
-    .author {
-        font-size: 10px;
-        min-height: auto;
-    }
-
-    .instagram-link {
-        padding: 7px 6px;
-        font-size: 9px !important;
-        margin-top: 9px;
-        margin-bottom: 9px;
-    }
-
-    .description {
-        font-size: 10px !important;
-        line-height: 1.65;
-        margin-top: 8px;
-        margin-bottom: 14px;
-    }
-
-    .download-btn {
-        padding: 12px 4px !important;
-        font-size: 9px;
-        letter-spacing: 0.5px;
-    }
-} 
-/* FIX DOWNLOAD BUTTON ALIGNMENT */
-.book-card {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
-
-.book-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.download-btn {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: auto;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-}
-
-/* MOBILE FIX */
-@media screen and (max-width: 600px) {
-    .download-btn {
-        width: 100% !important;
-        padding: 12px 2px !important;
-        font-size: 8px !important;
-        letter-spacing: 0.3px !important;
-        white-space: normal;
-    }
 }

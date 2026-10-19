@@ -1,7 +1,10 @@
+
+
 const novels = [
     {
         title: "Fana-e-Hayat",
         author: "Alkash",
+        instagram: "https://www.instagram.com/alkashdiaries/",
         genre: "Mystery · Romance",
         description:
             "A world of secrets, revenge, and mysteries waiting to unfold.",
@@ -11,6 +14,7 @@ const novels = [
     {
         title: "Na-gufta",
         author: "Aiman Khan",
+        instagram: "https://www.instagram.com/aimankwrites/",
         genre: "Social & Psychological Fiction",
         description:
             "She wanted to speak, but words had abandoned her. And by the time someone finally understood her silence, it was already too late.",
@@ -20,6 +24,7 @@ const novels = [
     {
         title: "Mazi, Haal Aur Mustaqbil",
         author: "Aiman Khan",
+        instagram: "https://www.instagram.com/aimankwrites/",
         genre: "Article",
         description: "Teen pahelo, ek zindagi",
         cover: "Mazi, haal aur mustqbil.jpg",
@@ -28,6 +33,7 @@ const novels = [
     {
         title: "Islaah",
         author: "Aiman Khan",
+        instagram: "https://www.instagram.com/aimankwrites/",
         genre: "Article",
         description:
             "Zindagi ka woh pehlu jo humein bachpan mein aage nahi badhne deta, baron ke saamne haq par bolna badtameezi nahi.",
@@ -35,6 +41,7 @@ const novels = [
         pdf: "https://drive.google.com/file/d/1HtwdExZ5Ceyq9_fb7Vfk4o2ESCWon86m/view?usp=drivesdk"
     }
 ];
+
 
 const grid = document.getElementById("book-grid");
 const search = document.getElementById("search");
@@ -63,6 +70,7 @@ function renderNovels(query = "") {
         const card = document.createElement("article");
         card.className = "book-card";
 
+        // Cover image or placeholder
         let cover;
 
         if (book.cover) {
@@ -84,6 +92,7 @@ function renderNovels(query = "") {
             cover.append(coverTitle, label);
         }
 
+        // Novel information
         const info = document.createElement("div");
         info.className = "book-info";
 
@@ -103,14 +112,35 @@ function renderNovels(query = "") {
         description.textContent = book.description;
 
         info.append(genre, title, author, description);
+         const instagramLink = document.createElement("a");
 
+instagramLink.className = "instagram-link";
+instagramLink.href = book.instagram || "#";
+instagramLink.target = "_blank";
+instagramLink.rel = "noopener noreferrer";
+
+instagramLink.textContent = book.instagram
+    ? "📸 Visit Instagram"
+    : "";
+
+if (!book.instagram) {
+    instagramLink.hidden = true;
+}
+
+instagramLink.addEventListener("click", event => {
+    event.stopPropagation();
+});
+
+info.append(genre, title, author, instagramLink, description);
+
+        // PDF download button
         if (book.pdf) {
             const link = document.createElement("a");
             link.className = "download-btn";
             link.href = book.pdf;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.textContent = "READ NOW";
+            link.textContent = "DOWNLOAD PDF";
 
             link.addEventListener("click", event => {
                 event.stopPropagation();
@@ -126,6 +156,7 @@ function renderNovels(query = "") {
 
         card.append(cover, info);
 
+        // Open Fana-e-Hayat details page on card click
         if (book.title === "Fana-e-Hayat") {
             card.style.cursor = "pointer";
             card.tabIndex = 0;
@@ -150,8 +181,10 @@ function renderNovels(query = "") {
     });
 }
 
+// Search novels
 search.addEventListener("input", event => {
     renderNovels(event.target.value);
 });
 
+// Display novels
 renderNovels();

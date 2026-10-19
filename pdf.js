@@ -9,7 +9,7 @@ const novels = [
         description:
             "A world of secrets, revenge, and mysteries waiting to unfold.",
         cover: "Fana e hayat cover.jpg",
-        pdf: "https://novelstudiopk.com/2026/09/02/novels/fana-e-hayat-by-alkash-complete/"
+        pdf: ""
     },
     {
         title: "Na-gufta",

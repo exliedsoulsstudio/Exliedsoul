@@ -43,7 +43,7 @@ const novels = [
     {
     title: "Mehandi ka rang pheeka",
     author: "Abeera Kanwal",
-    instagram: "@abeera_abduljabbar",
+    instagram: "https://www.instagram.com/abeera_abduljabbar",
     genre: "Soft Romance · After Marriage · Age Difference · Light Hearted",
     description: "کوئی بھی چیز محبت کے رنگوں کو ماند نہیں کر سکتی کیونکہ محبت کے رنگ کائنات کے سب سے گہرے رنگ ہوتے ہیں جن میں اضافہ مان اور احترام سے ہوتا ہے۔",
     cover: "Mehandi ka rang pheeka.jpg",

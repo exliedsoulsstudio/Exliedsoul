@@ -68,6 +68,23 @@ const novels = [
     instagram: "https://www.instagram.com/abeera_abduljabbar/",
     pdf: "https://drive.google.com/file/d/1JmFMKB4YZjaN0Bg50nE5ELV440RX7O64/view?usp=drivesdk"
 },
+{
+    title: "Maqsad",
+    author: "Fatima Asghar",
+    genre: "Crime Thriller",
+    description: "مقصد اسلام آباد کے پس منظر میں لکھی گئی ایک کرائم تھرلر ہے، جہاں عزت دار چہرے اکثر نقاب ثابت ہوتے ہیں، اور سب سے قریبی لوگ بھی وہ نہیں ہوتے جو دکھائی دیتے ہیں۔ مقصد تحقیقات کے نیچے محبت، پچھتاوے، اور کھو دیے گئے لوگوں کے قرض کی ایک خاموش کہانی چلتی ہے۔",
+    cover: "Maqsad.jpg",
+    pdf: "https://drive.google.com/file/d/1iEH963zBef69VoRAa1rgvLcaK74ETIXx/view?usp=drivesdk"
+},
+{
+    title: "Tum Meri Panha Ho",
+    author: "NOOR-E-MUQADAS",
+    genre: "Mystery · Romance",
+    description: "کچھ راز ماضی کی ایسی زنجیریں ہوتے ہیں جو حال کو بھی قید کر لیتے ہیں، اور کچھ رشتے انہی رازوں کے سائے میں جنم لیتے ہیں۔ یہ کہانی ہے خوف، محبت، ٹوٹے ہوئے خوابوں اور اُن چھپے ہوئے رازوں کی، جو کئی زندگیوں کو ہمیشہ کے لیے بدل دینے کی طاقت رکھتے ہیں۔",
+    cover: "Tum Meri Panha Ho.jpg",
+    pdf: "https://drive.google.com/file/d/1wwbZw8t5eMsRgsLwTSFCXQeQkY3T_ltJ/view?usp=drivesdk"
+},
+    
 ];
 
 

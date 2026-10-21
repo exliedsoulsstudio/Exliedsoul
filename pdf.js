@@ -86,6 +86,15 @@ const novels = [
     instagram: "https://www.instagram.com/qalamsekahanitak_/",
     pdf: "https://drive.google.com/file/d/1wwbZw8t5eMsRgsLwTSFCXQeQkY3T_ltJ/view?usp=drivesdk"
 },
+    {
+    title: "Ishq Ka Ulta Button",
+    author: "Humaira Arshad",
+    instagram: "https://www.instagram.com/humii._writes/",
+    genre: "Friendship · University Life · Rom-Com · Light-hearted Satire",
+    description: "یہ ایک مزاحیہ اور رومانوی کہانی ہے جس میں محبت کے سیدھے راستے کو الٹے اور انوکھے طریقے سے دکھایا گیا ہے۔ اس میں روایتی سنجیدہ عشق کے بجائے کرداروں کی نادانیوں، نوک جھونک اور الٹی سیدھی تدبیروں سے بھرپور ایک دلچسپ اور ہلکا پھلکا ماحول پیش کیا گیا ہے۔",
+    cover: "Ishq Ka Ulta Button.jpg",
+    pdf: "https://drive.google.com/file/d/1sFGKpdACqTU-tHEzU4T-dAeLkkp9hejn/view?usp=drivesdk"
+},
 ];
 
 

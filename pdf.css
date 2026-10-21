@@ -1,585 +1,84 @@
-/* ========================================
-   EXILED SOULS — LUXURY EDITORIAL DESIGN
-======================================== */
 
-:root {
-    --bg: #f4f0e8;
-    --card: #fbf9f4;
-    --text: #17191a;
-    --muted: #77716a;
-    --border: #d8cfc0;
-    --accent: #17191a;
-    --accent-hover: #8a7157;
-    --soft-beige: #e9e0d2;
-    --white: #ffffff;
-}
-
-/* GLOBAL */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px;
-}
-
-body {
-    margin: 0;
-    background:
-        radial-gradient(ellipse at top left, #fffdf8 0%, transparent 55%),
-        var(--bg);
-    color: var(--text);
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.7;
-}
-
-/* HEADER */
-
-header {
-    position: relative;
-    padding: 24px 6%;
-    background: rgba(251, 249, 244, 0.94);
-    border-bottom: 1px solid var(--border);
-}
-
-.brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    letter-spacing: 5px;
-    font-weight: 600;
-}
-
-nav {
-    gap: 28px;
-}
-
-nav a {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: var(--text);
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--accent-hover);
-}
-
-/* HERO */
-
-.hero {
-    position: relative;
-    overflow: hidden;
-    text-align: left;
-    padding: 85px 8% 90px;
-    background: linear-gradient(110deg, #f8f5ee 0%, #eee5d7 100%);
-    border-bottom: 1px solid var(--border);
-}
-
-.hero::after {
-    content: "ES";
-    position: absolute;
-    right: 5%;
-    top: 8%;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(140px, 24vw, 280px);
-    line-height: 1;
-    color: rgba(23, 25, 26, 0.045);
-    pointer-events: none;
-}
-
-.hero .eyebrow {
-    position: relative;
-    z-index: 1;
-    font-size: 10px;
-    letter-spacing: 5px;
-    color: var(--accent-hover);
-    margin-bottom: 25px;
-}
-
-.hero h1 {
-    position: relative;
-    z-index: 1;
-    max-width: 700px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(48px, 8vw, 92px);
-    font-weight: 500;
-    line-height: 0.98;
-    letter-spacing: -1px;
-}
-
-.hero p {
-    position: relative;
-    z-index: 1;
-    max-width: 420px;
-    font-size: 13px;
-    line-height: 2;
-    color: var(--muted);
-    margin-top: 25px;
-}
-
-.explore-btn {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding: 16px 28px;
-    background: var(--accent);
-    color: var(--white);
-    border: 1px solid var(--accent);
-    text-decoration: none;
-    font-size: 10px;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-}
-
-.explore-btn:hover {
-    background: transparent;
-    color: var(--accent);
-}
-
-/* LIBRARY */
-
-.library {
-    padding: 70px 6% 100px;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.section-heading h2 {
-    font-size: 48px;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-}
-
-.section-heading span {
-    font-size: 10px;
-    letter-spacing: 3px;
-}
-
-/* SEARCH */
-
-.search-box {
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 0;
-    padding: 17px 20px;
-    font-family: inherit;
-    font-size: 12px;
-    color: var(--text);
-    outline: none;
-}
-
-.search-box:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px #17191a0a;
-}
-
-/* NOVEL GRID — DESKTOP */
-
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    align-items: stretch;
-}
-
-.book-card {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    height: 100%;
-    padding: 16px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    box-shadow: 0 5px 18px rgba(40, 32, 20, 0.035);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.book-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(40, 32, 20, 0.09);
-}
-
-/* BOOK COVERS */
-
-.book-cover,
-.cover-placeholder {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.cover-placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: var(--soft-beige);
-    border: 1px solid var(--border);
-    text-align: center;
-    padding: 12px;
-}
-
-.cover-placeholder .cover-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-}
-
-/* CARD DETAILS */
-
-.book-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 0;
-    width: 100%;
-    padding: 20px 3px 4px;
-}
-
-.genre {
-    min-height: 2.8em;
-    font-size: 9px;
-    letter-spacing: 2px;
-    line-height: 1.6;
-    color: var(--muted);
-    text-transform: uppercase;
-}
-
-.book-info h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(22px, 3vw, 34px);
-    line-height: 1.15;
-    font-weight: 600;
-    margin-top: 8px;
-    overflow-wrap: anywhere;
-}
-
-.author {
-    min-height: 28px;
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 9px;
-}
-
-/* INSTAGRAM */
-
-.instagram-link {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 8px 11px;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    color: var(--text);
-    font-size: 10px;
-    letter-spacing: 0.4px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.instagram-link::before {
-    content: "@";
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    margin-right: 8px;
-}
-
-.instagram-link:hover {
-    background: var(--accent);
-    color: var(--white);
-    border-color: var(--accent);
-}
-
-/* DESCRIPTION */
-
-.description {
-    flex: 1;
-    font-size: 11px;
-    line-height: 1.9;
-    color: #625b53;
-    margin-top: 12px;
-    margin-bottom: 20px;
-}
-
-/* DOWNLOAD BUTTON */
-
-.download-btn {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: auto;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 15px 8px;
-    background: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 0;
-    color: var(--white);
-    text-align: center;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: 10px;
-    letter-spacing: 2px;
-    transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-    background: transparent;
-    color: var(--accent);
-}
-
-/* ABOUT */
-
-.about {
-    position: relative;
-    padding: 80px 8%;
-    background: #eae2d6;
-    border-top: 1px solid var(--border);
-    text-align: center;
-}
-
-.about h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
-    font-weight: 500;
-}
-
-.about p {
-    max-width: 480px;
-    margin: 20px auto 0;
-    color: var(--muted);
-    font-size: 12px;
-    line-height: 2.2;
-}
-
-/* FOOTER */
-
-footer {
-    padding: 26px 15px;
-    background: var(--text);
-    color: #e8dfd1;
-    text-align: center;
-    font-size: 9px;
-    letter-spacing: 3px;
-}
-
-/* TABLET */
-
-@media screen and (max-width: 900px) {
-    .library {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .book-grid {
-        gap: 20px;
-    }
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 600px) {
-    header {
-        padding: 20px 5%;
-        gap: 12px;
-    }
-
-    .brand {
-        font-size: 21px;
-        letter-spacing: 3px;
-    }
-
-    nav {
-        gap: 13px;
-    }
-
-    nav a {
-        font-size: 9px;
-        letter-spacing: 0.8px;
-    }
-
-    /* HERO */
-
-    .hero {
-        padding: 65px 7% 70px;
-    }
-
-    .hero h1 {
-        font-size: clamp(43px, 12vw, 66px);
-        letter-spacing: -0.5px;
-    }
-
-    .hero .eyebrow {
-        letter-spacing: 3px;
-    }
-
-    .hero p {
-        font-size: 12px;
-    }
-
-    /* LIBRARY */
-
-    .library {
-        padding: 45px 5% 65px;
-    }
-
-    .section-heading h2 {
-        font-size: 36px;
-    }
-
-    /* ONE LARGE CARD PER ROW */
-
-    .book-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 24px;
-    }
-
-    .book-card {
-        width: 100%;
-        min-width: 0;
-        padding: 16px;
-        border-radius: 3px;
-    }
-
-    .book-cover,
-    .cover-placeholder {
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        object-fit: cover;
-    }
-
-    /* CARD DETAILS */
-
-    .book-info {
-        width: 100%;
-        padding: 16px 4px 4px;
-    }
-
-    .genre {
-        min-height: auto;
-        font-size: 10px;
-        letter-spacing: 1px;
-        line-height: 1.7;
-    }
-
-    .book-info h3 {
-        font-size: 30px;
-        line-height: 1.2;
-        overflow-wrap: anywhere;
-    }
-
-    .author {
-        min-height: auto;
-        font-size: 11px;
-    }
-
-    /* INSTAGRAM */
-
-    .instagram-link {
-        padding: 8px 10px;
-        font-size: 10px;
-        letter-spacing: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    /* DESCRIPTION */
-
-    .description {
-        font-size: 12px;
-        line-height: 1.8;
-        margin-top: 10px;
-        margin-bottom: 18px;
-    }
-
-    /* DOWNLOAD BUTTON */
-
-    .download-btn {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin: auto 0 0;
-        padding: 15px 10px;
-        font-size: 10px;
-        letter-spacing: 1px;
-        text-align: center;
-        white-space: normal;
-    }
-
-    .cover-placeholder .cover-title {
-        font-size: 25px;
-    }
-
-    /* ABOUT */
-
-    .about {
-        padding: 55px 7%;
-    }
-
-    .about h2 {
-        font-size: 36px;
-    }
-
-    .about p {
-        font-size: 12px;
-    }
-
-    /* FOOTER */
-
-    footer {
-        font-size: 8px;
-        letter-spacing: 2px;
-        line-height: 2;
-    }
-}
-
-/* SMALL PHONES */
-
-@media screen and (max-width: 360px) {
-    .brand {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    nav {
-        gap: 9px;
-    }
-
-    nav a {
-        font-size: 8px;
-        letter-spacing: 0.4px;
-    }
-
-    .book-info h3 {
-        font-size: 26px;
-    }
-
-    .download-btn {
-        font-size: 9px;
-        letter-spacing: 0.5px;
-    }
-}
-
-/* ACCESSIBILITY */
-
-a:focus-visible,
-input:focus-visible {
-    outline: 2px solid var(--accent-hover);
-    outline-offset: 3px;
-}
-
-::selection {
-    background: var(--accent);
-    color: var(--white);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exiled Souls | Your Library</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pdf.css">
+</head>
+<body>
+    <header>
+        <div class="brand">EXILED SOULS</div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#library">LIBRARY</a>
+            <a href="#about">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">A HOME FOR EVERY STORY</p>
+            <h1>EXILED SOULS</h1>
+            <p>Stories that stay with you.<br>
+               Worlds waiting to be discovered.</p>
+            <a href="#library" class="explore-btn">EXPLORE THE LIBRARY</a>
+        </section>
+
+        <section class="library" id="library">
+            <div class="section-heading">
+                <h2>The Library</h2>
+                <span id="book-count">0 BOOKS</span>
+            </div>
+
+            <input type="search" id="search"
+                class="search-box"
+                placeholder="Search novels or authors..."
+                aria-label="Search novels or authors">
+
+            <div class="book-grid" id="book-grid"></div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>More Than Words.</h2>
+            <p>Exiled Souls is a home for stories, dreamers,
+            and the worlds authors create. Discover your next
+            favourite novel with us.</p>
+        </section>
+    </main>
+
+
+    
+            <section class="contact" id="contact">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Us.</h2>
+        <p>
+            Have a story to share, want to publish with us,
+            or simply wish to connect? We'd love to hear from you.
+        </p>
+
+        <div class="contact-links">
+           <a href="mailto:exiledsoulsstudio@gmail.com" class="contact-btn">
+            EMAIL US ↗
+          </a>
+
+            <a href="https://www.instagram.com/AlkashDiaries/"
+               target="_blank"
+               rel="noopener"
+               class="contact-btn">
+                INSTAGRAM ↗
+            </a>
+        </div>
+    </section>
+
+    <footer>EXILED SOULS · YOUR NEXT STORY AWAITS</footer>
+
+
+    <script src="pdf.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ const novels = [
         description:
             "A world of secrets, revenge, and mysteries waiting to unfold.",
         cover: "Fana e hayat cover.jpg",
-        status: "Ongoing",
+        status: "Complete",
         pdf: "https://drive.google.com/file/d/1GMNFgj07nnj1pb6nzYP-OlnwbfBB-yMt/view?usp=drivesdk"
     },
     {

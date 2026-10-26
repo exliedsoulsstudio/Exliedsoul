@@ -100,6 +100,26 @@ const novels = [
         cover: "Ishq Ka Ulta Button.jpg",
         pdf: "https://drive.google.com/file/d/1sFGKpdACqTU-tHEzU4T-dAeLkkp9hejn/view?usp=drivesdk"
     }
+    {
+    title: "Uqdah (Episode 01)",
+    author: "Aliza Saeed",
+    instagram: "https://www.instagram.com/alizah.official_/",
+    genre: "Psychological Crime Thriller",
+    status: "Ongoing",
+    description: "A forensic pathologist falls in love with a famous biker while handling a serial killer case. The truth is revealed at the end, with insane plot twists!",
+    cover: "Uqdah.jpg",
+    pdf: "https://drive.google.com/file/d/1oxU7O0aDdb3l_-L1hgsLTflNGu5xArb0/view?usp=drivesdk"
+},
+{
+    title: "Phir Bahar Aie",
+    author: "Isha Zahra",
+    instagram: "https://www.instagram.com/ishazahra.writes/",
+    genre: "Love at First Sight · Social Issues · Light Romance · Emotional · Multiple Characters · Sacrifice · Regret · Forgiveness",
+    status: "Complete",
+    description: "A complete emotional story exploring love at first sight, social issues, sacrifice, regret, and forgiveness through the lives of multiple characters.",
+    cover: "Phir Bahar Aie.jpg",
+    pdf: "https://drive.google.com/file/d/1xBr41V5XraQEWwv8Fl9XS_BYEdHNC9Df/view?usp=drivesdk"
+},
 ];
 
 const grid = document.getElementById("book-grid");

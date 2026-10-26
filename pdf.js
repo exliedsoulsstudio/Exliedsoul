@@ -96,9 +96,31 @@ const novels = [
         instagram: "https://www.instagram.com/humii._writes/",
         genre: "Friendship · University Life · Rom-Com · Light-hearted Satire",
         status: "Complete",
-        description: "یہ ایک مزاحیہ اور رومانوی کہ
+        description: "یہ ایک مزاحیہ اور رومانوی کہانی ہے جس میں محبت کے سیدھے راستے کو الٹے اور انوکھے طریقے سے دکھایا گیا ہے۔ اس میں روایتی سنجیدہ عشق کے بجائے کرداروں کی نادانیوں، نوک جھونک اور الٹی سیدھی تدبیروں سے بھرپور ایک دلچسپ اور ہلکا پھلکا ماحول پیش کیا گیا ہے۔",
+        cover: "Ishq Ka Ulta Button.jpg",
+        pdf: "https://drive.google.com/file/d/1sFGKpdACqTU-tHEzU4T-dAeLkkp9hejn/view?usp=drivesdk"
+    },
+    {
+        title: "Uqdah (Episode 01)",
+        author: "Aliza Saeed (علیزہ سعید)",
+        instagram: "https://www.instagram.com/alizah.official_/",
+        genre: "Psychological Crime Thriller",
+        status: "Ongoing",
+        description: "A forensic pathologist falls in love with a famous biker while handling a serial killer case. The truth is revealed at the end, with insane plot twists!",
+        cover: "Uqdah.jpg",
+        pdf: "https://drive.google.com/file/d/1oxU7O0aDdb3l_-L1hgsLTflNGu5xArb0/view?usp=drivesdk"
+    },
+    {
+        title: "Phir Bahar Aie (پھر بہار آئی)",
+        author: "Isha Zahra (اشا زہرہ)",
+        instagram: "https://www.instagram.com/ishazahra.writes/",
+        genre: "Love at First Sight · Social Issues · Light Romance · Emotional · Multiple Characters · Sacrifice · Regret · Forgiveness",
+        status: "Complete",
+        description: "A complete emotional story exploring love at first sight, social issues, sacrifice, regret, and forgiveness through the lives of multiple characters.",
+        cover: "Phir Bahar Aie.jpg",
+        pdf: "https://drive.google.com/file/d/1xBr41V5XraQEWwv8Fl9XS_BYEdHNC9Df/view?usp=drivesdk"
+    }
 ];
-
 const grid = document.getElementById("book-grid");
 const search = document.getElementById("search");
 const count = document.getElementById("book-count");

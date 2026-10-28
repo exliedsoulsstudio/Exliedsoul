@@ -120,6 +120,25 @@ const novels = [
         cover: "Phir Bahar Aie.jpg",
         pdf: "https://drive.google.com/file/d/1xBr41V5XraQEWwv8Fl9XS_BYEdHNC9Df/view?usp=drivesdk"
     }
+    {
+    title: "Ham Saath Hain",
+    author: "Narmin",
+    instagram: "https://www.instagram.com/narmin_novels/",
+    genre: "Friendship · Broken Love · Mystery",
+    status: "Episode 01",
+    description: "A story of friendship, broken love, and mystery.",
+    cover: "Ham Saath Hain.jpg",
+    pdf: "https://drive.google.com/file/d/1pzHQ0attsoA4a99kYsvei2Y7NUA79spY/view?usp=drivesdk"
+},
+{
+    title: "سرمائی",
+    author: "Haleema Sadia",
+    genre: "Revenge · Love",
+    status: "Complete",
+    description: "یہ کہانی ایسی ہے جس میں آپ کو ہر طرح کا احساس دیکھنے کو ملے گا۔ یہ کہانی ہے ایسے لوگوں کی جن کی زندگی میں بہت سی تکلیفیں آئیں، کچھ نے صبر کیا اور کچھ نے دوسروں کی زندگی برباد کی۔",
+    cover: "سرمائی.jpg",
+    pdf: "https://drive.google.com/file/d/1h9NOZOcRMBN4O_drD6mcIq9C-L5vpcCX/view?usp=drivesdk"
+},
 ];
 const grid = document.getElementById("book-grid");
 const search = document.getElementById("search");

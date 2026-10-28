@@ -119,7 +119,7 @@ const novels = [
         description: "A complete emotional story exploring love at first sight, social issues, sacrifice, regret, and forgiveness through the lives of multiple characters.",
         cover: "Phir Bahar Aie.jpg",
         pdf: "https://drive.google.com/file/d/1xBr41V5XraQEWwv8Fl9XS_BYEdHNC9Df/view?usp=drivesdk"
-    }
+    },
     {
     title: "Ham Saath Hain",
     author: "Narmin",

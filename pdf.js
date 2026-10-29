@@ -138,6 +138,21 @@ const novels = [
         cover: "سرمائی.jpg",
         pdf: "https://drive.google.com/file/d/1h9NOZOcRMBN4O_drD6mcIq9C-L5vpcCX/view?usp=drivesdk"
     },
+    {
+    title: "Maqsad مقصد",
+    author: "Fatima Asghar فاطمہ اصغر",
+    instagram: "https://www.instagram.com/fatima.asghar._/",
+    genre: "Crime Thriller",
+    status: "Ongoing",
+    description: "مقصد اسلام آباد کے پس منظر میں لکھی گئی ایک کرائم تھرلر ہے، جہاں عزت دار چہرے اکثر نقاب ثابت ہوتے ہیں، اور سب سے قریبی لوگ بھی وہ نہیں ہوتے جو دکھائی دیتے ہیں۔ مقصد تحقیقات کے نیچے محبت، پچھتاوے، اور کھو دیے گئے لوگوں کے قرض کی ایک خاموش کہانی چلتی ہے۔",
+    cover: "Maqsad2.jpg",
+    pdfs: [
+        {
+            title: "Episodes 5–9",
+            link: "https://drive.google.com/file/d/1PjmrOIOUlZlTDO4PiafU4RLk3aAYsyiX/view?usp=drivesdk"
+        }
+    ]
+},
 ];
 
 const grid = document.getElementById("book-grid");

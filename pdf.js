@@ -156,6 +156,7 @@ const novels = [
     {
     title: "Mah e Nu (ماہِ نو)",
     author: "Abeera Kanwal (عبیرہ کنول)",
+        instagram: "https://www.instagram.com/abeera_abduljabbar",
     genre: "After Marriage · Importance of Education · Domestic Violence · Struggle · Young Age Marriage",
     status: "Complete",
     description: "روشنی حق ہے تاریکی کے گرداب میں پھنسے ہر شخص کا۔ یہ کہانی ماہ نور نامی لڑکی کی ہے جو پڑھنا چاہتی تھی مگر اس کے والدین نے اس کی شادی کردی۔ شادی کے بعد اس کے شوہر کو روزگار میں مشکلات کا سامنا تھا اور ایک سال بعد وہ نوکری سے ہاتھ دھو بیٹھا۔ اس کے غصے میں اس نے ماہ نور کو تشدد کا نشانہ بنایا، جس کے بعد ماہ نور نے اپنے شوہر سے علیحدگی اختیار کرتے دوبارہ اپنی پڑھائی شروع کی۔",

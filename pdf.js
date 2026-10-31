@@ -163,6 +163,16 @@ const novels = [
     cover: "Mah e Nu.jpg",
     pdf: "https://drive.google.com/file/d/1RLaMKRsNQSIyqORbn8jObG5Op5ETrLHV/view?usp=drivesdk"
 },
+    {
+    title: "An Chaha (ان چاہا)",
+    author: "Aiman Khan",
+    instagram: "https://www.instagram.com/aimankwrites/",
+    genre: "Self Growth · Parenting · Rooted in Reality",
+    status: "Complete",
+    description: "کچھ کہانیاں محبت سے نہیں، محرومیوں سے جنم لیتی ہیں… کچھ زخم وقت کے ساتھ بھرتے نہیں، بلکہ انسان کی شخصیت کا حصہ بن جاتے ہیں۔ یہ کہانی ہے اُن ان کہے احساسات، ٹوٹتے رشتوں، ادھورے خوابوں اور خود کو پہچاننے کی جدوجہد کی، جہاں ہر سوال کا جواب ملنا ضروری نہیں… مگر ہر انسان کو اپنی زندگی کا راستہ چننے کا حق ضرور ہے۔",
+    cover: "An Chaha.jpg",
+    pdf: "https://drive.google.com/file/d/1LHcY5zSczS_fN4Y1aUh6Ce5jQS9a9kN_/view?usp=drivesdk"
+},
 ];
 
 const grid = document.getElementById("book-grid");
